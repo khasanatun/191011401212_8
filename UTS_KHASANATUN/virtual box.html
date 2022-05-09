@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Klik tombol dibawah ini untuk memunculkan Dialog Box.</p>
+
+<button onclick="myFunction()">Klik Saya</button>
+
+<p id="demo"></p>
+
+<script>
+
+function myFunction() {
+
+  var text;
+
+  var favDrink = prompt("Apakah minuman favorite Anda?", "Kopi");
+
+  switch(favDrink) {
+
+    case "Kopi":
+
+      text = "Nikmat dan Mantap";
+
+      break;
+
+    case "Susu":
+
+      text = "Banyak manfaat dan menyehatkan";
+
+      break;
+
+    case "Teh":
+
+      text = "Cocok untuk diet";
+
+      break;
+
+    default:
+
+      text = "Minuman jenis apa tuh ?";
+
+  }
+
+  document.getElementById("demo").innerHTML = text;
+
+}
+
+</script>
+
+</body>
+</html>

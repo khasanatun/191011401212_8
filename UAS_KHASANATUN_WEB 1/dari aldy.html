@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Hasil Inputan</title>
+    </head>
+    <body>
+        <h1>Data Reservator</h1>
+    <%
+        String tNama = request.getParameter("namaDepan");
+        String tNamaB = request.getParameter("namaBelakang");
+        String tEmail = request.getParameter("alamatEmail");
+        String tNoTelp = request.getParameter("noTelp");
+        String tSosmed = request.getParameter("Sosmed");
+        String tSewaA = request.getParameter("awalSewa");
+        String tJamSewaA = request.getParameter("jamAwal1");
+        String tJamSewaB = request.getParameter("jamAwal2");
+        String tSewaB = request.getParameter("akhirSewa");
+        String tJamAkhirA = request.getParameter("jamAkhir1");
+        String tJamAkhirB = request.getParameter("jamAkhir2");
+        String tKet = request.getParameter("keterangan");
+    %>
+    <table border="0">
+        <tr>
+            <td>Nama Lengkap&emsp;&emsp;</td>
+            <td>:</td>
+            <td> <% out.println(tNama); %> <% out.println(tNamaB); %></td>
+        </tr>
+        <tr>
+            <td>Alamat Email&emsp;&emsp;</td>
+            <td>:</td>
+            <td><% out.println(tEmail); %></td>
+        </tr>
+        <tr>
+            <td>Telepon&emsp;&emsp;</td>
+            <td>:</td>
+            <td><% out.println(tNoTelp); %></td>
+        </tr>
+        <tr>
+            <td>Facebook / Twitter&emsp;&emsp;</td>
+            <td>:</td>
+            <td><% out.println(tSosmed); %></td>
+        </tr>
+         <tr>
+            <td>Awal Sewa&emsp;&emsp;</td>
+            <td>:</td>
+            <td><% out.println(tSewaA); %></td>
+        </tr>
+        <tr>
+            <td>Jam Sewa&emsp;&emsp;</td>
+            <td>:</td>
+            <td> <% out.println(tJamSewaA); %> <% out.println(tJamSewaB); %></td>
+        </tr>
+        <tr>
+            <td>Akhir Sewa&emsp;&emsp;</td>
+            <td>:</td>
+            <td><% out.println(tSewaB); %></td>
+        </tr>
+        <tr>
+            <td>Jam Kembali&emsp;&emsp;</td>
+            <td>:</td>
+            <td> <% out.println(tJamAkhirA); %> <% out.println(tJamAkhirB); %></td>
+        </tr>
+        <tr>
+            <td>Keterangan&emsp;&emsp;</td>
+            <td>:</td>
+            <td><% out.println(tKet); %></td>
+        </tr>
+    </table>
+    </body>
+</html>
